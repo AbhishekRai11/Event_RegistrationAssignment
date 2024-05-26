@@ -6,6 +6,8 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EventService {
 
@@ -16,6 +18,13 @@ public class EventService {
 
         EventRegister eventRegister= eventRepository.findById(id).get();
         return eventRegister;
+
+    }
+
+    public List<EventRegister> getAllEvent(){
+
+        return eventRepository.findAll();
+        //return eventRegister;
 
     }
 
@@ -34,7 +43,7 @@ public class EventService {
         EventRegister eventRegister= eventRepository.findById(id).get();
         eventRegister.setLocation(location);
         eventRepository.save(eventRegister);
-        return "successfully saved";
+        return "successfully update";
 
     }
 
