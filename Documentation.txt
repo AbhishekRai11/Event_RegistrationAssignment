@@ -1,0 +1,11 @@
+This is a spring boot based Application
+In this application CRUD operation are perform
+For run this application first need to clone the repo from git
+Open the project on any ide like intellij
+After this goes to application.properties file
+And change the database configurations like dabase name, username and password
+Instruction For check all restApis
+For register user there is no need of any authentication, simple call api create user which are written in UserRegistrationController.
+For register Event and update event and delete event you need to given id and password of user who is ADMIN
+only ADMIN is allowed for create update and delete EVENT.
+All controller related to EVENT written in EventController
