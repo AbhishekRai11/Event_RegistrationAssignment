@@ -49,15 +49,15 @@ class EventTest {
 
 
 
-//    @Test
-//    @Order(2)
-//    public void testReadAll () {
-//        List list = pRepo.findAll();
-//        assertThat(list).size().isGreaterThan(0);
-//    }
+    @Test
+    @Order(2)
+    public void testReadAll () {
+        List list = pRepo.findAll();
+        assertThat(list).size().isGreaterThan(0);
+    }
 
     @Test
-    @Order(4)
+    @Order(2)
     public void testRead () {
         EventRegister event = pRepo.findByUsername("iPhone XR").get();
         assertEquals("iPhone XR", event.getName());
