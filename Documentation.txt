@@ -9,3 +9,5 @@ For register user there is no need of any authentication, simple call api create
 For register Event and update event and delete event you need to given id and password of user who is ADMIN
 only ADMIN is allowed for create update and delete EVENT.
 All controller related to EVENT written in EventController
+Check All apis use postman and for login user , use Authorization section and choose Basic Auth and given username and password of user which
+is registerd with "ADMIN" role.
